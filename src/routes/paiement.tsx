@@ -51,7 +51,7 @@ function PaymentPage() {
     try {
       const { data, error } = await supabase.from("orders").insert({
         user_id: user.id,
-        items: items as unknown as Record<string, unknown>[],
+        items: JSON.parse(JSON.stringify(items)),
         subtotal,
         shipping: SHIPPING,
         total,
