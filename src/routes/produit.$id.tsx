@@ -70,7 +70,7 @@ function ProductPage() {
             <div className="mt-6">
               <p className="mb-2 text-sm font-semibold">Taille</p>
               <div className="flex flex-wrap gap-2">
-                {product.sizes.map((s) => (
+                {product.sizes.map((s: string) => (
                   <button
                     key={s}
                     onClick={() => setSize(s)}
@@ -87,7 +87,7 @@ function ProductPage() {
             <div className="mt-5">
               <p className="mb-2 text-sm font-semibold">Couleur</p>
               <div className="flex flex-wrap gap-2">
-                {product.colors.map((c) => (
+                {product.colors.map((c: string) => (
                   <button
                     key={c}
                     onClick={() => setColor(c)}
