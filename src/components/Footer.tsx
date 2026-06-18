@@ -21,7 +21,7 @@ export function Footer() {
         <div>
           <h4 className="mb-3 text-sm font-bold uppercase tracking-wide text-primary">Boutique</h4>
           <ul className="space-y-2 text-sm text-background/80">
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Située à Bouaké</li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Située à Bouaké — Livraison 🇨🇮 🇲🇱 🇧🇫 🇳🇪 🇧🇯 🇹🇬</li>
             <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> 07 20 98 78 12</li>
             <li className="flex items-start gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Lun – Dim, 07h – 19h</li>
           </ul>

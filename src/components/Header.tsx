@@ -19,7 +19,13 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
+    <>
+      {/* Delivery banner */}
+      <div className="w-full bg-primary py-1.5 text-center text-[11px] font-semibold text-primary-foreground sm:text-xs">
+        🚚 Livraison express dans toute la sous-région : 🇨🇮 Côte d&apos;Ivoire · 🇲🇱 Mali · 🇧🇫 Burkina Faso · 🇳🇪 Niger · 🇧🇯 Bénin · 🇹🇬 Togo
+      </div>
+
+      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
         <Link to="/" className="flex shrink-0 items-center gap-2">
           <div className="grid h-9 w-9 place-items-center rounded-lg bg-primary text-primary-foreground font-display font-black">
@@ -107,5 +113,6 @@ export function Header() {
         </div>
       )}
     </header>
+    </>
   );
 }
