@@ -12,19 +12,19 @@ export interface Product {
   isNew?: boolean;
 }
 
-// Generated product images — professional e-commerce style
-import tshirtHomme from "@/assets/produits/tshirt-homme.png.asset.json";
-import chemiseHomme from "@/assets/produits/chemise-homme.png.asset.json";
-import jeanHomme from "@/assets/produits/jean-homme.png.asset.json";
-import poloHomme from "@/assets/produits/polo-homme.png.asset.json";
-import robeFemme from "@/assets/produits/robe-femme.png.asset.json";
-import topFemme from "@/assets/produits/top-femme.png.asset.json";
-import jupeFemme from "@/assets/produits/jupe-femme.png.asset.json";
-import pagneFemme from "@/assets/produits/pagne-femme.png.asset.json";
-import tshirtEnfant from "@/assets/produits/tshirt-enfant.png.asset.json";
-import shortEnfant from "@/assets/produits/short-enfant.png.asset.json";
-import robeEnfant from "@/assets/produits/robe-enfant.png.asset.json";
-import survetementEnfant from "@/assets/produits/survetement-enfant.png.asset.json";
+// Generated product images — professional e-commerce style (CDN)
+const tshirtHommeUrl = "/__l5e/assets-v1/c9bd98c1-2384-46ab-b111-1c8029f4c463/tshirt-homme.png";
+const chemiseHommeUrl = "/__l5e/assets-v1/8f590d8a-e2c8-4462-b683-d80d9f5d3b1e/chemise-homme.png";
+const jeanHommeUrl = "/__l5e/assets-v1/56600197-0a68-4207-b233-3e600e347a89/jean-homme.png";
+const poloHommeUrl = "/__l5e/assets-v1/cddd66a7-053c-4896-91dd-faeb6b7a454a/polo-homme.png";
+const robeFemmeUrl = "/__l5e/assets-v1/cb6bcd65-0045-4f16-9387-6b49a7ddc501/robe-femme.png";
+const topFemmeUrl = "/__l5e/assets-v1/0ee138f5-15ba-4877-9293-ce128bf20dc1/top-femme.png";
+const jupeFemmeUrl = "/__l5e/assets-v1/0a9a0440-98fe-4e9d-9117-6e5e39bc61fb/jupe-femme.png";
+const pagneFemmeUrl = "/__l5e/assets-v1/cb73a08b-107d-4bb4-8986-adf4ff13c8fe/pagne-femme.png";
+const tshirtEnfantUrl = "/__l5e/assets-v1/52452ff7-3149-4a01-ba65-5486f57062c8/tshirt-enfant.png";
+const shortEnfantUrl = "/__l5e/assets-v1/3f3c170c-1ae2-4563-a8a9-b2ff391ef4ba/short-enfant.png";
+const robeEnfantUrl = "/__l5e/assets-v1/7154259b-e608-4023-b162-005641312fe9/robe-enfant.png";
+const survetementEnfantUrl = "/__l5e/assets-v1/bf478ae9-575c-4a75-90b6-5b13108a23d6/survetement-enfant.png";
 
 export const PRODUCTS: Product[] = [
   {
@@ -32,7 +32,7 @@ export const PRODUCTS: Product[] = [
     name: "T-shirt coton premium",
     price: 3500,
     category: "homme",
-    image: tshirtHomme.url,
+    image: tshirtHommeUrl,
     description: "T-shirt 100% coton bio, coupe droite, idéal au quotidien.",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Noir", "Blanc", "Bleu"],
@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     name: "Chemise lin manches longues",
     price: 6500,
     category: "homme",
-    image: chemiseHomme.url,
+    image: chemiseHommeUrl,
     description: "Chemise en lin léger, parfaite pour le climat tropical.",
     sizes: ["M", "L", "XL"],
     colors: ["Blanc", "Beige"],
@@ -53,7 +53,7 @@ export const PRODUCTS: Product[] = [
     name: "Jean slim délavé",
     price: 7500,
     category: "homme",
-    image: jeanHomme.url,
+    image: jeanHommeUrl,
     description: "Jean slim avec stretch confortable.",
     sizes: ["30", "32", "34", "36"],
     colors: ["Bleu", "Noir"],
@@ -63,7 +63,7 @@ export const PRODUCTS: Product[] = [
     name: "Polo classique",
     price: 4500,
     category: "homme",
-    image: poloHomme.url,
+    image: poloHommeUrl,
     description: "Polo piqué de coton, col contrasté.",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Marine", "Vert", "Bordeaux"],
@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
     name: "Robe fleurie d'été",
     price: 6500,
     category: "femme",
-    image: robeFemme.url,
+    image: robeFemmeUrl,
     description: "Robe légère à motif fleuri, idéale pour l'été.",
     sizes: ["S", "M", "L"],
     colors: ["Rouge", "Bleu"],
@@ -85,7 +85,7 @@ export const PRODUCTS: Product[] = [
     name: "Top crop tendance",
     price: 2500,
     category: "femme",
-    image: topFemme.url,
+    image: topFemmeUrl,
     description: "Top court mode, parfait avec un jean taille haute.",
     sizes: ["XS", "S", "M", "L"],
     colors: ["Noir", "Blanc", "Rose"],
@@ -95,7 +95,7 @@ export const PRODUCTS: Product[] = [
     name: "Jupe plissée midi",
     price: 5000,
     category: "femme",
-    image: jupeFemme.url,
+    image: jupeFemmeUrl,
     description: "Jupe plissée midi, finition élégante.",
     sizes: ["S", "M", "L"],
     colors: ["Beige", "Noir"],
@@ -105,7 +105,7 @@ export const PRODUCTS: Product[] = [
     name: "Ensemble pagne moderne",
     price: 7500,
     category: "femme",
-    image: pagneFemme.url,
+    image: pagneFemmeUrl,
     description: "Ensemble en pagne wax, coupe contemporaine.",
     sizes: ["M", "L", "XL"],
     colors: ["Multicolore"],
@@ -116,7 +116,7 @@ export const PRODUCTS: Product[] = [
     name: "T-shirt enfant ludique",
     price: 1500,
     category: "enfant",
-    image: tshirtEnfant.url,
+    image: tshirtEnfantUrl,
     description: "T-shirt enfant avec imprimé fun.",
     sizes: ["4A", "6A", "8A", "10A"],
     colors: ["Jaune", "Bleu", "Rouge"],
@@ -126,7 +126,7 @@ export const PRODUCTS: Product[] = [
     name: "Short jeans enfant",
     price: 2500,
     category: "enfant",
-    image: shortEnfant.url,
+    image: shortEnfantUrl,
     description: "Short en jean résistant pour les aventures.",
     sizes: ["4A", "6A", "8A", "10A"],
     colors: ["Bleu"],
@@ -136,7 +136,7 @@ export const PRODUCTS: Product[] = [
     name: "Robe enfant princesse",
     price: 3500,
     category: "enfant",
-    image: robeEnfant.url,
+    image: robeEnfantUrl,
     description: "Robe colorée pour petites filles.",
     sizes: ["2A", "4A", "6A", "8A"],
     colors: ["Rose", "Violet"],
@@ -147,7 +147,7 @@ export const PRODUCTS: Product[] = [
     name: "Survêtement enfant",
     price: 5500,
     category: "enfant",
-    image: survetementEnfant.url,
+    image: survetementEnfantUrl,
     description: "Survêtement confortable pour le sport.",
     sizes: ["6A", "8A", "10A", "12A"],
     colors: ["Gris", "Noir"],
