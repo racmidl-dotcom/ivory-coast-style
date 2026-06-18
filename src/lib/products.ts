@@ -12,14 +12,27 @@ export interface Product {
   isNew?: boolean;
 }
 
-// Unsplash photos of real clothing (men, women, kids)
+// Generated product images — professional e-commerce style
+import tshirtHomme from "@/assets/produits/tshirt-homme.png.asset.json";
+import chemiseHomme from "@/assets/produits/chemise-homme.png.asset.json";
+import jeanHomme from "@/assets/produits/jean-homme.png.asset.json";
+import poloHomme from "@/assets/produits/polo-homme.png.asset.json";
+import robeFemme from "@/assets/produits/robe-femme.png.asset.json";
+import topFemme from "@/assets/produits/top-femme.png.asset.json";
+import jupeFemme from "@/assets/produits/jupe-femme.png.asset.json";
+import pagneFemme from "@/assets/produits/pagne-femme.png.asset.json";
+import tshirtEnfant from "@/assets/produits/tshirt-enfant.png.asset.json";
+import shortEnfant from "@/assets/produits/short-enfant.png.asset.json";
+import robeEnfant from "@/assets/produits/robe-enfant.png.asset.json";
+import survetementEnfant from "@/assets/produits/survetement-enfant.png.asset.json";
+
 export const PRODUCTS: Product[] = [
   {
     id: "p1",
     name: "T-shirt coton premium",
     price: 3500,
     category: "homme",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=750&fit=crop",
+    image: tshirtHomme.url,
     description: "T-shirt 100% coton bio, coupe droite, idéal au quotidien.",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Noir", "Blanc", "Bleu"],
@@ -30,7 +43,7 @@ export const PRODUCTS: Product[] = [
     name: "Chemise lin manches longues",
     price: 6500,
     category: "homme",
-    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&h=750&fit=crop",
+    image: chemiseHomme.url,
     description: "Chemise en lin léger, parfaite pour le climat tropical.",
     sizes: ["M", "L", "XL"],
     colors: ["Blanc", "Beige"],
@@ -40,7 +53,7 @@ export const PRODUCTS: Product[] = [
     name: "Jean slim délavé",
     price: 7500,
     category: "homme",
-    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=600&h=750&fit=crop",
+    image: jeanHomme.url,
     description: "Jean slim avec stretch confortable.",
     sizes: ["30", "32", "34", "36"],
     colors: ["Bleu", "Noir"],
@@ -50,7 +63,7 @@ export const PRODUCTS: Product[] = [
     name: "Polo classique",
     price: 4500,
     category: "homme",
-    image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=600&h=750&fit=crop",
+    image: poloHomme.url,
     description: "Polo piqué de coton, col contrasté.",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Marine", "Vert", "Bordeaux"],
@@ -61,7 +74,7 @@ export const PRODUCTS: Product[] = [
     name: "Robe fleurie d'été",
     price: 6500,
     category: "femme",
-    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&h=750&fit=crop",
+    image: robeFemme.url,
     description: "Robe légère à motif fleuri, idéale pour l'été.",
     sizes: ["S", "M", "L"],
     colors: ["Rouge", "Bleu"],
@@ -72,7 +85,7 @@ export const PRODUCTS: Product[] = [
     name: "Top crop tendance",
     price: 2500,
     category: "femme",
-    image: "https://images.unsplash.com/photo-1564257577-2d3ee8740ba9?w=600&h=750&fit=crop",
+    image: topFemme.url,
     description: "Top court mode, parfait avec un jean taille haute.",
     sizes: ["XS", "S", "M", "L"],
     colors: ["Noir", "Blanc", "Rose"],
@@ -82,7 +95,7 @@ export const PRODUCTS: Product[] = [
     name: "Jupe plissée midi",
     price: 5000,
     category: "femme",
-    image: "https://images.unsplash.com/photo-1583496661160-fb5886a13d44?w=600&h=750&fit=crop",
+    image: jupeFemme.url,
     description: "Jupe plissée midi, finition élégante.",
     sizes: ["S", "M", "L"],
     colors: ["Beige", "Noir"],
@@ -92,7 +105,7 @@ export const PRODUCTS: Product[] = [
     name: "Ensemble pagne moderne",
     price: 7500,
     category: "femme",
-    image: "https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=600&h=750&fit=crop",
+    image: pagneFemme.url,
     description: "Ensemble en pagne wax, coupe contemporaine.",
     sizes: ["M", "L", "XL"],
     colors: ["Multicolore"],
@@ -103,7 +116,7 @@ export const PRODUCTS: Product[] = [
     name: "T-shirt enfant ludique",
     price: 1500,
     category: "enfant",
-    image: "https://images.unsplash.com/photo-1519278409-1f56fdda7fe5?w=600&h=750&fit=crop",
+    image: tshirtEnfant.url,
     description: "T-shirt enfant avec imprimé fun.",
     sizes: ["4A", "6A", "8A", "10A"],
     colors: ["Jaune", "Bleu", "Rouge"],
@@ -113,7 +126,7 @@ export const PRODUCTS: Product[] = [
     name: "Short jeans enfant",
     price: 2500,
     category: "enfant",
-    image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=600&h=750&fit=crop",
+    image: shortEnfant.url,
     description: "Short en jean résistant pour les aventures.",
     sizes: ["4A", "6A", "8A", "10A"],
     colors: ["Bleu"],
@@ -123,7 +136,7 @@ export const PRODUCTS: Product[] = [
     name: "Robe enfant princesse",
     price: 3500,
     category: "enfant",
-    image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=600&h=750&fit=crop",
+    image: robeEnfant.url,
     description: "Robe colorée pour petites filles.",
     sizes: ["2A", "4A", "6A", "8A"],
     colors: ["Rose", "Violet"],
@@ -134,7 +147,7 @@ export const PRODUCTS: Product[] = [
     name: "Survêtement enfant",
     price: 5500,
     category: "enfant",
-    image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?w=600&h=750&fit=crop",
+    image: survetementEnfant.url,
     description: "Survêtement confortable pour le sport.",
     sizes: ["6A", "8A", "10A", "12A"],
     colors: ["Gris", "Noir"],
