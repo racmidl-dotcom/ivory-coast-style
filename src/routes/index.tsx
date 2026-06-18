@@ -47,7 +47,7 @@ function HomePage() {
               La mode ivoirienne <br />à prix imbattables
             </h1>
             <p className="mt-3 max-w-md text-base text-primary-foreground/90 sm:text-lg">
-              Homme, Femme, Enfant — Livraison rapide partout en Côte d'Ivoire. Paiement Mobile Money sécurisé.
+              Homme, Femme, Enfant — Livraison rapide dans toute la sous-région. Paiement Mobile Money sécurisé.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#produits">
@@ -55,7 +55,7 @@ function HomePage() {
               </a>
             </div>
             <div className="mt-8 flex flex-wrap gap-4 text-sm text-primary-foreground/90">
-              <span className="flex items-center gap-2"><Truck className="h-4 w-4" /> Livraison Bouaké & toute la CI</span>
+              <span className="flex items-center gap-2"><Truck className="h-4 w-4" /> Livraison CI, Mali, BF, Niger, Bénin, Togo</span>
               <span className="flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Paiement sécurisé</span>
             </div>
           </div>
@@ -63,6 +63,36 @@ function HomePage() {
             <div className="grid grid-cols-2 gap-3">
               <img src={PRODUCTS[4].image} alt="" className="aspect-[3/4] w-full rounded-2xl object-cover shadow-2xl" />
               <img src={PRODUCTS[7].image} alt="" className="mt-8 aspect-[3/4] w-full rounded-2xl object-cover shadow-2xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Delivery zone banner */}
+      <section className="border-y bg-card">
+        <div className="mx-auto max-w-7xl px-4 py-5">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+            <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
+              <Truck className="h-5 w-5 text-primary" />
+              Livraison express disponible dans 6 pays
+            </div>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                { flag: "🇨🇮", name: "Côte d'Ivoire" },
+                { flag: "🇲🇱", name: "Mali" },
+                { flag: "🇧🇫", name: "Burkina Faso" },
+                { flag: "🇳🇪", name: "Niger" },
+                { flag: "🇧🇯", name: "Bénin" },
+                { flag: "🇹🇬", name: "Togo" },
+              ].map((c) => (
+                <span
+                  key={c.name}
+                  className="inline-flex items-center gap-1.5 rounded-full border bg-background px-3 py-1 text-xs font-medium shadow-sm"
+                >
+                  <span className="text-base leading-none">{c.flag}</span>
+                  {c.name}
+                </span>
+              ))}
             </div>
           </div>
         </div>

@@ -82,7 +82,7 @@ function CartPage() {
               <h2 className="mb-4 font-display text-lg font-black">Récapitulatif</h2>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between"><span className="text-muted-foreground">Sous-total</span><span className="font-semibold">{formatPrice(subtotal)}</span></div>
-                <div className="flex justify-between"><span className="text-muted-foreground">Livraison</span><span className="font-semibold">{formatPrice(SHIPPING)}</span></div>
+                <div className="flex justify-between"><span className="text-muted-foreground">Livraison sous-région</span><span className="font-semibold">{formatPrice(SHIPPING)}</span></div>
                 <div className="my-3 border-t" />
                 <div className="flex justify-between text-base"><span className="font-bold">Total</span><span className="font-black text-primary">{formatPrice(total)}</span></div>
               </div>
