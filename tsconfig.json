@@ -14,6 +14,8 @@
     "noEmit": true,
 
     /* Linting */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
     "noUnusedLocals": false,
