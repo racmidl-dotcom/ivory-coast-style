@@ -22,19 +22,20 @@ export function Header() {
     <>
       {/* Delivery banner */}
       <div className="w-full bg-primary py-1.5 text-center text-[11px] font-semibold text-primary-foreground sm:text-xs">
-        🚚 Livraison express dans toute la sous-région : 🇨🇮 Côte d&apos;Ivoire · 🇲🇱 Mali · 🇧🇫 Burkina Faso · 🇳🇪 Niger · 🇧🇯 Bénin · 🇹🇬 Togo
+        🚚 Livraison express : 🇨🇮 Côte d&apos;Ivoire · 🇲🇱 Mali · 🇧🇫 Burkina Faso · 🇳🇪 Niger · 🇧🇯 Bénin · 🇹🇬 Togo · 🇨🇲 Cameroun
       </div>
 
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
         <Link to="/" className="flex shrink-0 items-center gap-2">
           <div className="grid h-9 w-9 place-items-center rounded-lg bg-primary text-primary-foreground font-display font-black">
-            K
+            N
           </div>
           <span className="hidden font-display text-xl font-black text-foreground sm:inline">
-            Kassa<span className="text-primary">CI</span>
+            Nike<span className="text-primary">Stake</span>
           </span>
         </Link>
+
 
         <form onSubmit={onSearch} className="hidden flex-1 max-w-2xl md:flex">
           <div className="relative w-full">
@@ -42,7 +43,7 @@ export function Header() {
             <Input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Rechercher un vêtement, marque, catégorie…"
+              placeholder="Rechercher une basket, modèle, pointure…"
               className="h-11 pl-10 pr-24"
             />
             <Button type="submit" size="sm" className="absolute right-1 top-1/2 h-9 -translate-y-1/2">
