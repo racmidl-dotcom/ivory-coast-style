@@ -46,19 +46,19 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.22 0.02 260);
 
-  /* Orange vif Jumia-like */
-  --primary: oklch(0.71 0.19 47);
+  /* Bleu vif NikeStake */
+  --primary: oklch(0.52 0.22 262);
   --primary-foreground: oklch(1 0 0);
-  --primary-hover: oklch(0.65 0.2 45);
+  --primary-hover: oklch(0.45 0.22 262);
 
-  --secondary: oklch(0.97 0.01 80);
+  --secondary: oklch(0.97 0.01 250);
   --secondary-foreground: oklch(0.22 0.02 260);
 
   --muted: oklch(0.97 0.005 260);
   --muted-foreground: oklch(0.5 0.02 260);
 
-  --accent: oklch(0.95 0.05 60);
-  --accent-foreground: oklch(0.35 0.15 45);
+  --accent: oklch(0.94 0.05 255);
+  --accent-foreground: oklch(0.38 0.18 262);
 
   --destructive: oklch(0.6 0.23 27);
   --destructive-foreground: oklch(1 0 0);
@@ -68,11 +68,12 @@
 
   --border: oklch(0.92 0.01 260);
   --input: oklch(0.92 0.01 260);
-  --ring: oklch(0.71 0.19 47);
+  --ring: oklch(0.52 0.22 262);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.71 0.19 47), oklch(0.78 0.16 60));
+  --gradient-hero: linear-gradient(135deg, oklch(0.42 0.2 262), oklch(0.58 0.2 255));
   --shadow-card: 0 2px 8px -2px oklch(0.22 0.02 260 / 0.08), 0 4px 16px -4px oklch(0.22 0.02 260 / 0.06);
-  --shadow-cta: 0 8px 24px -8px oklch(0.71 0.19 47 / 0.5);
+  --shadow-cta: 0 8px 24px -8px oklch(0.52 0.22 262 / 0.5);
+
 }
 
 @layer base {

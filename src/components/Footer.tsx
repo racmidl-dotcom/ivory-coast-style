@@ -7,22 +7,22 @@ export function Footer() {
         <div>
           <div className="mb-3 flex items-center gap-2">
             <div className="grid h-9 w-9 place-items-center rounded-lg bg-primary font-display font-black text-primary-foreground">
-              K
+              N
             </div>
             <span className="font-display text-xl font-black">
-              Kassa<span className="text-primary">CI</span>
+              Nike<span className="text-primary">Stake</span>
             </span>
           </div>
           <p className="text-sm text-background/70">
-            Votre boutique de vêtements en Côte d'Ivoire. Livraison rapide partout dans le pays.
+            Votre boutique de baskets Nike en Côte d'Ivoire. Livraison rapide dans toute la sous-région.
           </p>
         </div>
 
         <div>
           <h4 className="mb-3 text-sm font-bold uppercase tracking-wide text-primary">Boutique</h4>
           <ul className="space-y-2 text-sm text-background/80">
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Située à Bouaké — Livraison 🇨🇮 🇲🇱 🇧🇫 🇳🇪 🇧🇯 🇹🇬</li>
-            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> 07 20 98 78 12</li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Située à Man — Livraison 🇨🇮 🇲🇱 🇧🇫 🇳🇪 🇧🇯 🇹🇬 🇨🇲</li>
+            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> 01 43 28 80 59</li>
             <li className="flex items-start gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> Lun – Dim, 07h – 19h</li>
           </ul>
         </div>
@@ -47,7 +47,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-background/10 py-4 text-center text-xs text-background/60">
-        © {new Date().getFullYear()} KassaCI — Tous droits réservés.
+        © {new Date().getFullYear()} NikeStake — Tous droits réservés.
       </div>
     </footer>
   );
