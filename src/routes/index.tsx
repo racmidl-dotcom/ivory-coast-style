@@ -13,8 +13,19 @@ export const Route = createFileRoute("/")({
   validateSearch: (s: Record<string, unknown>): Search => ({
     q: typeof s.q === "string" ? s.q : undefined,
   }),
+  head: () => ({
+    meta: [
+      { title: "NikeStake — Baskets Nike à Man, Côte d'Ivoire" },
+      { name: "description", content: "Achetez vos baskets Nike homme, femme et enfant chez NikeStake à Man. Livraison en Côte d'Ivoire, Mali, Burkina, Niger, Bénin, Togo et Cameroun." },
+      { property: "og:title", content: "NikeStake — Baskets Nike à Man, Côte d'Ivoire" },
+      { property: "og:description", content: "Baskets Nike homme, femme et enfant. Livraison dans 7 pays, paiement Mobile Money." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: HomePage,
 });
+
 
 function HomePage() {
   const { q } = Route.useSearch();
@@ -41,13 +52,13 @@ function HomePage() {
         <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-12 sm:py-16 md:grid-cols-2">
           <div className="text-primary-foreground">
             <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase backdrop-blur">
-              <Sparkles className="h-3.5 w-3.5" /> Nouvelle collection
+              <Sparkles className="h-3.5 w-3.5" /> Nouvelle collection Nike
             </span>
             <h1 className="mt-4 font-display text-3xl font-black leading-tight sm:text-5xl">
-              La mode ivoirienne <br />à prix imbattables
+              NikeStake <br />Baskets Nike authentiques
             </h1>
             <p className="mt-3 max-w-md text-base text-primary-foreground/90 sm:text-lg">
-              Homme, Femme, Enfant — Livraison rapide dans toute la sous-région. Paiement Mobile Money sécurisé.
+              Homme, Femme, Enfant — Basé à Man, Côte d&apos;Ivoire. Livraison rapide dans 7 pays. Paiement Mobile Money sécurisé.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="#produits">
@@ -55,9 +66,10 @@ function HomePage() {
               </a>
             </div>
             <div className="mt-8 flex flex-wrap gap-4 text-sm text-primary-foreground/90">
-              <span className="flex items-center gap-2"><Truck className="h-4 w-4" /> Livraison CI, Mali, BF, Niger, Bénin, Togo</span>
+              <span className="flex items-center gap-2"><Truck className="h-4 w-4" /> Livraison CI, Mali, BF, Niger, Bénin, Togo, Cameroun</span>
               <span className="flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Paiement sécurisé</span>
             </div>
+
           </div>
           <div className="relative hidden md:block">
             <div className="grid grid-cols-2 gap-3">
@@ -74,7 +86,7 @@ function HomePage() {
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
             <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
               <Truck className="h-5 w-5 text-primary" />
-              Livraison express disponible dans 6 pays
+              Livraison express disponible dans 7 pays
             </div>
             <div className="flex flex-wrap justify-center gap-2">
               {[
@@ -84,7 +96,9 @@ function HomePage() {
                 { flag: "🇳🇪", name: "Niger" },
                 { flag: "🇧🇯", name: "Bénin" },
                 { flag: "🇹🇬", name: "Togo" },
+                { flag: "🇨🇲", name: "Cameroun" },
               ].map((c) => (
+
                 <span
                   key={c.name}
                   className="inline-flex items-center gap-1.5 rounded-full border bg-background px-3 py-1 text-xs font-medium shadow-sm"
@@ -102,7 +116,7 @@ function HomePage() {
       <section id="produits" className="mx-auto max-w-7xl px-4 py-10">
         <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <h2 className="font-display text-2xl font-black sm:text-3xl">Nos produits</h2>
+            <h2 className="font-display text-2xl font-black sm:text-3xl">Nos baskets</h2>
             <p className="text-sm text-muted-foreground">
               {filtered.length} article{filtered.length > 1 ? "s" : ""} {q ? `pour "${q}"` : ""}
             </p>

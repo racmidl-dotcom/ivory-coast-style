@@ -12,145 +12,147 @@ export interface Product {
   isNew?: boolean;
 }
 
-// Generated product images — professional e-commerce style (CDN)
-const tshirtHommeUrl = "/__l5e/assets-v1/c9bd98c1-2384-46ab-b111-1c8029f4c463/tshirt-homme.png";
-const chemiseHommeUrl = "/__l5e/assets-v1/8f590d8a-e2c8-4462-b683-d80d9f5d3b1e/chemise-homme.png";
-const jeanHommeUrl = "/__l5e/assets-v1/56600197-0a68-4207-b233-3e600e347a89/jean-homme.png";
-const poloHommeUrl = "/__l5e/assets-v1/cddd66a7-053c-4896-91dd-faeb6b7a454a/polo-homme.png";
-const robeFemmeUrl = "/__l5e/assets-v1/cb6bcd65-0045-4f16-9387-6b49a7ddc501/robe-femme.png";
-const topFemmeUrl = "/__l5e/assets-v1/0ee138f5-15ba-4877-9293-ce128bf20dc1/top-femme.png";
-const jupeFemmeUrl = "/__l5e/assets-v1/0a9a0440-98fe-4e9d-9117-6e5e39bc61fb/jupe-femme.png";
-const pagneFemmeUrl = "/__l5e/assets-v1/cb73a08b-107d-4bb4-8986-adf4ff13c8fe/pagne-femme.png";
-const tshirtEnfantUrl = "/__l5e/assets-v1/52452ff7-3149-4a01-ba65-5486f57062c8/tshirt-enfant.png";
-const shortEnfantUrl = "/__l5e/assets-v1/3f3c170c-1ae2-4563-a8a9-b2ff391ef4ba/short-enfant.png";
-const robeEnfantUrl = "/__l5e/assets-v1/7154259b-e608-4023-b162-005641312fe9/robe-enfant.png";
-const survetementEnfantUrl = "/__l5e/assets-v1/bf478ae9-575c-4a75-90b6-5b13108a23d6/survetement-enfant.png";
+import airRunBleu from "@/assets/baskets/air-run-bleu.jpg";
+import highTopBlanche from "@/assets/baskets/high-top-blanche.jpg";
+import airMaxNavy from "@/assets/baskets/air-max-navy.jpg";
+import knitGris from "@/assets/baskets/knit-gris.jpg";
+import femmeBlancheBleu from "@/assets/baskets/femme-blanche-bleu.jpg";
+import femmeRoyalBlue from "@/assets/baskets/femme-royal-blue.jpg";
+import femmeCourtBlanc from "@/assets/baskets/femme-court-blanc.jpg";
+import femmeSlipNavy from "@/assets/baskets/femme-slip-navy.jpg";
+import enfantVelcroBleu from "@/assets/baskets/enfant-velcro-bleu.jpg";
+import enfantHightop from "@/assets/baskets/enfant-hightop.jpg";
+import enfantRunningCiel from "@/assets/baskets/enfant-running-ciel.jpg";
+import enfantSportNoir from "@/assets/baskets/enfant-sport-noir.jpg";
+
+const SIZES_H = ["39", "40", "41", "42", "43", "44", "45"];
+const SIZES_F = ["36", "37", "38", "39", "40", "41"];
+const SIZES_E = ["28", "30", "32", "34", "35"];
 
 export const PRODUCTS: Product[] = [
   {
     id: "p1",
-    name: "T-shirt coton premium",
-    price: 3500,
+    name: "Nike Air Run Bleu Royal",
+    price: 45000,
     category: "homme",
-    image: tshirtHommeUrl,
-    description: "T-shirt 100% coton bio, coupe droite, idéal au quotidien.",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Noir", "Blanc", "Bleu"],
+    image: airRunBleu,
+    description: "Basket de running homme, mesh respirant et semelle Air amortissante. Bleu / blanc.",
+    sizes: SIZES_H,
+    colors: ["Bleu", "Blanc"],
     isNew: true,
   },
   {
     id: "p2",
-    name: "Chemise lin manches longues",
-    price: 6500,
+    name: "Nike High-Top Blanche",
+    price: 55000,
     category: "homme",
-    image: chemiseHommeUrl,
-    description: "Chemise en lin léger, parfaite pour le climat tropical.",
-    sizes: ["M", "L", "XL"],
-    colors: ["Blanc", "Beige"],
+    image: highTopBlanche,
+    description: "Montante en cuir blanc avec swoosh bleu. Un classique intemporel du basket.",
+    sizes: SIZES_H,
+    colors: ["Blanc", "Bleu"],
   },
   {
     id: "p3",
-    name: "Jean slim délavé",
-    price: 7500,
+    name: "Nike Air Max Navy",
+    price: 62000,
     category: "homme",
-    image: jeanHommeUrl,
-    description: "Jean slim avec stretch confortable.",
-    sizes: ["30", "32", "34", "36"],
-    colors: ["Bleu", "Noir"],
-  },
-  {
-    id: "p4",
-    name: "Polo classique",
-    price: 4500,
-    category: "homme",
-    image: poloHommeUrl,
-    description: "Polo piqué de coton, col contrasté.",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Marine", "Vert", "Bordeaux"],
+    image: airMaxNavy,
+    description: "Air Max bleu marine, bulle d'air visible et semelle gomme. Confort maximal.",
+    sizes: SIZES_H,
+    colors: ["Marine"],
     isNew: true,
   },
   {
+    id: "p4",
+    name: "Nike Knit Gris Bleu",
+    price: 38000,
+    category: "homme",
+    image: knitGris,
+    description: "Sneaker légère en maille tricotée, idéale pour le sport et la ville.",
+    sizes: SIZES_H,
+    colors: ["Gris", "Bleu"],
+  },
+  {
     id: "p5",
-    name: "Robe fleurie d'été",
-    price: 6500,
+    name: "Nike Femme Blanche & Ciel",
+    price: 42000,
     category: "femme",
-    image: robeFemmeUrl,
-    description: "Robe légère à motif fleuri, idéale pour l'été.",
-    sizes: ["S", "M", "L"],
-    colors: ["Rouge", "Bleu"],
+    image: femmeBlancheBleu,
+    description: "Basket lifestyle femme, blanc nacré et touches bleu ciel. Semelle épaisse.",
+    sizes: SIZES_F,
+    colors: ["Blanc", "Bleu ciel"],
     isNew: true,
   },
   {
     id: "p6",
-    name: "Top crop tendance",
-    price: 2500,
+    name: "Nike Femme Royal Blue",
+    price: 39000,
     category: "femme",
-    image: topFemmeUrl,
-    description: "Top court mode, parfait avec un jean taille haute.",
-    sizes: ["XS", "S", "M", "L"],
-    colors: ["Noir", "Blanc", "Rose"],
-  },
-  {
-    id: "p7",
-    name: "Jupe plissée midi",
-    price: 5000,
-    category: "femme",
-    image: jupeFemmeUrl,
-    description: "Jupe plissée midi, finition élégante.",
-    sizes: ["S", "M", "L"],
-    colors: ["Beige", "Noir"],
-  },
-  {
-    id: "p8",
-    name: "Ensemble pagne moderne",
-    price: 7500,
-    category: "femme",
-    image: pagneFemmeUrl,
-    description: "Ensemble en pagne wax, coupe contemporaine.",
-    sizes: ["M", "L", "XL"],
-    colors: ["Multicolore"],
-    isNew: true,
-  },
-  {
-    id: "p9",
-    name: "T-shirt enfant ludique",
-    price: 1500,
-    category: "enfant",
-    image: tshirtEnfantUrl,
-    description: "T-shirt enfant avec imprimé fun.",
-    sizes: ["4A", "6A", "8A", "10A"],
-    colors: ["Jaune", "Bleu", "Rouge"],
-  },
-  {
-    id: "p10",
-    name: "Short jeans enfant",
-    price: 2500,
-    category: "enfant",
-    image: shortEnfantUrl,
-    description: "Short en jean résistant pour les aventures.",
-    sizes: ["4A", "6A", "8A", "10A"],
+    image: femmeRoyalBlue,
+    description: "Running femme bleu roi, ultra légère avec semelle blanche amortissante.",
+    sizes: SIZES_F,
     colors: ["Bleu"],
   },
   {
-    id: "p11",
-    name: "Robe enfant princesse",
-    price: 3500,
+    id: "p7",
+    name: "Nike Court Blanc",
+    price: 35000,
+    category: "femme",
+    image: femmeCourtBlanc,
+    description: "Sneaker basse en cuir blanc, contrefort bleu. Élégante au quotidien.",
+    sizes: SIZES_F,
+    colors: ["Blanc"],
+  },
+  {
+    id: "p8",
+    name: "Nike Slip-On Navy",
+    price: 28000,
+    category: "femme",
+    image: femmeSlipNavy,
+    description: "Modèle sans lacets bleu marine, souple et facile à enfiler.",
+    sizes: SIZES_F,
+    colors: ["Marine"],
+  },
+  {
+    id: "p9",
+    name: "Nike Kids Velcro Bleu",
+    price: 18000,
     category: "enfant",
-    image: robeEnfantUrl,
-    description: "Robe colorée pour petites filles.",
-    sizes: ["2A", "4A", "6A", "8A"],
-    colors: ["Rose", "Violet"],
+    image: enfantVelcroBleu,
+    description: "Basket enfant à scratchs, bleu et blanc. Facile à mettre tout seul.",
+    sizes: SIZES_E,
+    colors: ["Bleu", "Blanc"],
+  },
+  {
+    id: "p10",
+    name: "Nike Kids High-Top",
+    price: 25000,
+    category: "enfant",
+    image: enfantHightop,
+    description: "Montante enfant blanche à détails bleus, style basket-ball.",
+    sizes: SIZES_E,
+    colors: ["Blanc", "Bleu"],
     isNew: true,
   },
   {
-    id: "p12",
-    name: "Survêtement enfant",
-    price: 5500,
+    id: "p11",
+    name: "Nike Kids Running Ciel",
+    price: 20000,
     category: "enfant",
-    image: survetementEnfantUrl,
-    description: "Survêtement confortable pour le sport.",
-    sizes: ["6A", "8A", "10A", "12A"],
-    colors: ["Gris", "Noir"],
+    image: enfantRunningCiel,
+    description: "Running enfant bleu ciel, très légère pour courir et jouer.",
+    sizes: SIZES_E,
+    colors: ["Bleu ciel"],
+  },
+  {
+    id: "p12",
+    name: "Nike Kids Sport Noir",
+    price: 22000,
+    category: "enfant",
+    image: enfantSportNoir,
+    description: "Basket sport enfant noire à semelle bleue, parfaite pour l'entraînement.",
+    sizes: SIZES_E,
+    colors: ["Noir", "Bleu"],
   },
 ];
 
