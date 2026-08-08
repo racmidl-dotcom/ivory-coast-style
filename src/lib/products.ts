@@ -33,10 +33,11 @@ export const PRODUCTS: Product[] = [
   {
     id: "p1",
     name: "Nike Air Run Bleu Royal",
-    price: 45000,
+    price: 20000,
     category: "homme",
     image: airRunBleu,
-    description: "Basket de running homme, mesh respirant et semelle Air amortissante. Bleu / blanc.",
+    description:
+      "Basket de running homme, mesh respirant et semelle Air amortissante. Bleu / blanc.",
     sizes: SIZES_H,
     colors: ["Bleu", "Blanc"],
     isNew: true,
@@ -44,7 +45,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p2",
     name: "Nike High-Top Blanche",
-    price: 55000,
+    price: 25000,
     category: "homme",
     image: highTopBlanche,
     description: "Montante en cuir blanc avec swoosh bleu. Un classique intemporel du basket.",
@@ -54,7 +55,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p3",
     name: "Nike Air Max Navy",
-    price: 62000,
+    price: 25000,
     category: "homme",
     image: airMaxNavy,
     description: "Air Max bleu marine, bulle d'air visible et semelle gomme. Confort maximal.",
@@ -65,7 +66,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p4",
     name: "Nike Knit Gris Bleu",
-    price: 38000,
+    price: 15000,
     category: "homme",
     image: knitGris,
     description: "Sneaker légère en maille tricotée, idéale pour le sport et la ville.",
@@ -75,7 +76,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p5",
     name: "Nike Femme Blanche & Ciel",
-    price: 42000,
+    price: 15000,
     category: "femme",
     image: femmeBlancheBleu,
     description: "Basket lifestyle femme, blanc nacré et touches bleu ciel. Semelle épaisse.",
@@ -86,7 +87,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p6",
     name: "Nike Femme Royal Blue",
-    price: 39000,
+    price: 8000,
     category: "femme",
     image: femmeRoyalBlue,
     description: "Running femme bleu roi, ultra légère avec semelle blanche amortissante.",
@@ -96,7 +97,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p7",
     name: "Nike Court Blanc",
-    price: 35000,
+    price: 4000,
     category: "femme",
     image: femmeCourtBlanc,
     description: "Sneaker basse en cuir blanc, contrefort bleu. Élégante au quotidien.",
@@ -106,7 +107,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p8",
     name: "Nike Slip-On Navy",
-    price: 28000,
+    price: 8000,
     category: "femme",
     image: femmeSlipNavy,
     description: "Modèle sans lacets bleu marine, souple et facile à enfiler.",
@@ -116,7 +117,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p9",
     name: "Nike Kids Velcro Bleu",
-    price: 18000,
+    price: 4000,
     category: "enfant",
     image: enfantVelcroBleu,
     description: "Basket enfant à scratchs, bleu et blanc. Facile à mettre tout seul.",
@@ -126,7 +127,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p10",
     name: "Nike Kids High-Top",
-    price: 25000,
+    price: 8000,
     category: "enfant",
     image: enfantHightop,
     description: "Montante enfant blanche à détails bleus, style basket-ball.",
@@ -137,7 +138,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p11",
     name: "Nike Kids Running Ciel",
-    price: 20000,
+    price: 4000,
     category: "enfant",
     image: enfantRunningCiel,
     description: "Running enfant bleu ciel, très légère pour courir et jouer.",
@@ -147,7 +148,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "p12",
     name: "Nike Kids Sport Noir",
-    price: 22000,
+    price: 20000,
     category: "enfant",
     image: enfantSportNoir,
     description: "Basket sport enfant noire à semelle bleue, parfaite pour l'entraînement.",
