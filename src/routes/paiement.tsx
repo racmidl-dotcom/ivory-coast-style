@@ -94,7 +94,7 @@ function PaymentPage() {
                 id="address"
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                placeholder="Quartier, rue, repère… (Bouaké, Abidjan, …)"
+                placeholder="Quartier, rue, repère… (Man, Abidjan, …)"
                 rows={4}
                 required
                 className="mt-1"

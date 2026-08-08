@@ -48,7 +48,7 @@ function AuthPage() {
       if (mode === "signup") {
         const parsed = signupSchema.parse({ fullName, phone, password });
         await signUp(parsed.fullName, parsed.phone, parsed.password);
-        toast.success("Compte créé", { description: "Bienvenue sur KassaCI !" });
+        toast.success("Compte créé", { description: "Bienvenue sur NikeStake !" });
       } else {
         const parsed = loginSchema.parse({ phone, password });
         await signIn(parsed.phone, parsed.password);
@@ -95,7 +95,7 @@ function AuthPage() {
             )}
             <div>
               <Label htmlFor="phone">Numéro de téléphone</Label>
-              <Input id="phone" inputMode="tel" placeholder="07 20 98 78 12" value={phone} onChange={(e) => setPhone(e.target.value)} required className="mt-1" />
+              <Input id="phone" inputMode="tel" placeholder="01 43 28 80 59" value={phone} onChange={(e) => setPhone(e.target.value)} required className="mt-1" />
             </div>
             <div>
               <Label htmlFor="password">Mot de passe</Label>

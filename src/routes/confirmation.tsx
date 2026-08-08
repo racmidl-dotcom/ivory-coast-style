@@ -42,7 +42,7 @@ function ConfirmationPage() {
           <div className="rounded-xl border bg-card p-4">
             <Phone className="mb-2 h-5 w-5 text-primary" />
             <p className="text-sm font-semibold">Support</p>
-            <p className="text-xs text-muted-foreground">Bouaké · 07 20 98 78 12 · 07h–19h</p>
+            <p className="text-xs text-muted-foreground">Man · 01 43 28 80 59 · 07h–19h</p>
           </div>
         </div>
 

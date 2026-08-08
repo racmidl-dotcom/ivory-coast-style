@@ -13,8 +13,19 @@ export const Route = createFileRoute("/")({
   validateSearch: (s: Record<string, unknown>): Search => ({
     q: typeof s.q === "string" ? s.q : undefined,
   }),
+  head: () => ({
+    meta: [
+      { title: "NikeStake — Baskets Nike à Man, Côte d'Ivoire" },
+      { name: "description", content: "Achetez vos baskets Nike homme, femme et enfant chez NikeStake à Man. Livraison en Côte d'Ivoire, Mali, Burkina, Niger, Bénin, Togo et Cameroun." },
+      { property: "og:title", content: "NikeStake — Baskets Nike à Man, Côte d'Ivoire" },
+      { property: "og:description", content: "Baskets Nike homme, femme et enfant. Livraison dans 7 pays, paiement Mobile Money." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: HomePage,
 });
+
 
 function HomePage() {
   const { q } = Route.useSearch();
